@@ -6,8 +6,17 @@ function App() {
   const companyName = "Microsoft";
   const companyPhone = "8888888888";
   const [companyEmail, setComEmail] = useState("info@microsoft.com");
+  const comDetails = useState({
+    companyName: "Microsoft",
+    companyPhone: "8888888888",
+    companyEmail: "info@microsoft.com"
+  });
 
   function handleChangeEmail(){
+    setComEmail("info@ms.com");
+  }
+
+  function handleChangeDetails(){
     setComEmail("info@ms.com");
   }
   
