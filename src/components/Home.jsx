@@ -1,6 +1,7 @@
-import { Card, Container, Row, Col, Button } from "react-bootstrap";
+import { Card, Container, Row, Col, Button, Form } from "react-bootstrap";
 import FooterSection from "./common/FooterSection";
 import NavigationBar from "./common/NavigationBar";
+import AppForm from "./AppForm";
 
 const Home = ({comName, comPhone, comEmail, onPress}) => {
 
@@ -11,6 +12,7 @@ const Home = ({comName, comPhone, comEmail, onPress}) => {
     return (
         <>
         <NavigationBar brand={comName} phone={comPhone}/>
+        <AppForm/>
         <Container>
             <Row>
                 <Col md={4} className="mx-auto mb-3 mt-5">
